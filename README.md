@@ -29,26 +29,25 @@ In order to pull the salary for each employee in the database. I selected employ
 
 
 2. Hire date 1986:
-The query selects columns first name, last name and hire date from the employees table. Where filters the rows of hire_date column  from 1986-01-01 to 1986-12-31.
+  The query selects columns first name, last name and hire date from the employees table. Where filters the rows of hire_date column  from 1986-01-01 to 1986-12-31.
 
 
 3. Department managers
-The query selected dept_num,dept_name from the department table under the alias d. and selected emp_no, last_name, and frist_name from employee table. AS is used to show how each column is displayed.
+  The query selected dept_num,dept_name from the department table under the alias d. and selected emp_no, last_name, and frist_name from employee table. AS is used to show how each column is displayed.
 JOIN is used to combine both employees and the departments table to display basic info of each manager in the company
 
 
 4. Employee and Department
-The query selects dept_no and dept_name from departments table, and emp_no,last_name,first_name from employees table. JOIN is used to retrive data from employees and depatrtments table to diaplay each employees persosnal info.
+  The query selects dept_no and dept_name from departments table, and emp_no,last_name,first_name from employees table. JOIN is used to retrive data from employees and depatrtments table to diaplay each employees persosnal info.
 
 5. All Employees with then name Hercules with last name starts with "B".
-
-The query selects first_name, last_name, and sex from the employees table. WHERE selects from the first_name column using a bool argument to locate the string "Hercules". AND  along with the last_name column to locate strings beggining with the letter B.
+  The query selects first_name, last_name, and sex from the employees table. WHERE selects from the first_name column using a bool argument to locate the string "Hercules". AND  along with the last_name column to locate strings beggining with the letter B.
 
 6. Sale Department Employees
-The query selects from the employees table with the table alias 'e.' JOIN combines dept_emp with employees table on emp_no to show epmloyees alongiside their department info. WHERE locates the Sales department with a bool argumnet '='.
+  The query selects from the employees table with the table alias 'e.' JOIN combines dept_emp with employees table on emp_no to show epmloyees alongiside their department info. WHERE locates the Sales department with a bool argumnet '='.
 
 7. Sales and Development departments
-The query selects columns emp_no, last_name, and first_name from employees table. From department table ; dept_name. JOIN links both tables so that department info is dispalyed alongside employee info. WHERE filters to only include Sales and Development departments.
+  The query selects columns emp_no, last_name, and first_name from employees table. From department table ; dept_name. JOIN links both tables so that department info is dispalyed alongside employee info. WHERE filters to only include Sales and Development departments.
 
 8. Frequent Last names
-The query selects last_name from the employees table. COUNT(*) AS frequency counts how many employees share the same last name. ORDER BY DESC shows the highest to lowest frequency with the same last names.
+  The query selects last_name from the employees table. COUNT(*) AS frequency counts how many employees share the same last name. ORDER BY DESC shows the highest to lowest frequency with the same last names.
